@@ -27,9 +27,9 @@ for group_name in extras:
 
 extras['all'] = all_deps
 
-setup(name='baselines',
+setup(name='tf2_baselines',
       packages=[package for package in find_packages()
-                if package.startswith('baselines')],
+                if package.startswith('tf2_baselines')],
       install_requires=[
           'gym>=0.15.4, <0.16.0',
           'scipy',
@@ -40,7 +40,7 @@ setup(name='baselines',
           'opencv-python'
       ],
       extras_require=extras,
-      description='OpenAI baselines: high quality implementations of reinforcement learning algorithms',
+      description='OpenAI tf2_baselines: high quality implementations of reinforcement learning algorithms',
       author='OpenAI',
       url='https://github.com/openai/baselines',
       author_email='gym@openai.com',

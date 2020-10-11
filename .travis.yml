@@ -7,8 +7,8 @@ services:
 
 install:
     - pip install flake8
-    - docker build . -t baselines-test
+    - docker build . -t tf2_baselines-test
 
 script:
     - flake8 . --show-source --statistics
-    - docker run -e RUNSLOW=1 baselines-test pytest -v .
+    - docker run -e RUNSLOW=1 tf2_baselines-test pytest -v .
